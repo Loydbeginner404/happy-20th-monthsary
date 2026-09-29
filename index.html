@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For you babiii 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <audio id="bgMusic" loop>
+    <source src="jayrald841-sa-aking-puso-lyrics-music-song-saakingpuso-lyrics-fyp-vibes.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+  
+  <main class="scene">
+    
+    <!-- Intro -->
+    <section class="screen intro-screen" id="introScreen">
+      <p class="intro-eyebrow">Surprise for you babiii kooo…</p>
+      <h1 class="intro-title">A Letter for You babiii</h1>
+      <p class="intro-sub">Tap the envelope to open your heart</p>
+
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open the love letter">
+        <div class="envelope-back"></div>
+        <div class="letter-preview" id="letterPreview">
+          <span class="preview-seal">💗</span>
+        </div>
+        <div class="envelope-front" id="envelopeFront"></div>
+        <div class="envelope-flap" id="envelopeFlap"></div>
+        <div class="envelope-shadow"></div>
+      </div>
+
+      <p class="hint">click or tap ✨</p>
+    </section>
+    
+    <!-- Letter -->
+    <section class="screen letter-screen hidden" id="letterScreen">
+      <article class="letter-paper" id="letterPaper">
+        <button class="close-btn" id="closeLetter" aria-label="Close letter">×</button>
+
+        <div class="letter-inner">
+          <p class="letter-date">For the one who makes my days happier</p>
+
+          <h2 class="letter-greeting">HAPPY 20TH MONTHSARY BABIII,</h2>
+
+          <div class="letter-body">
+
+            <p>
+              Happy 20th monthsaryyy, myyy oneee andddd onlyyy konggg babiii koooo.
+              I'm soooo happpyyy babiii koo, 20 months na tayo babiii kooo, ang bilis
+              ng panahon nooo Parang kailan lang nung nagsisimula pa lang tayo, pero
+              ngayon ang dami na nating memories na nabuo together. Sobrang saya kooo
+              kasi hanggang ngayon, ikaw pa rin yung kasama kooo sa journey na ito.
+              Thank youuu for staying with me, for understanding me, and for loving me
+              kahit may mga times na hindi ako madaling intindihin at minsan makulit.
+            </p>
+
+            <p>
+              Babiii kooo, gusto kooo malaman mo kung gaano ka kaimportante sa akin,
+              sana nararamdaman mo sa mga ginagawa ko kung gaano kita kamahal.
+              Thank youuu sa lahat ng effort mo, sa pag aalaga mo sa akin, sa patience
+              mo, at sa mga simpleng bagay na ginagawa mo para mapasaya ako. Kahit yung
+              mga little things na ginagawa mo, I appreciate all of them so much..
+            </p>
+
+            <p>
+              Sorry din po sa mga times na nagkukulang ako sayo like po wala ako sa tabi,
+              at sa mga bagay na hindi ko pa nagagawa, lalo na yung gift na gusto kong
+              ibigay sayo. Alam kong may mga bagay pa akong kailangang ayusin at tapusin,
+              pero sana alam mong sincere yung pagmamahal ko sayo. Gusto ko pa rin bumawi
+              sayo at iparamdam sayo kung gaano ka kahalaga sa akin aalagaan kita nang mas
+              maayos pag mag kasama na tayo. Happy 20th monthsary ulittt, myyy oneee andddd
+              onlyyy konggg babiii koooo. marami pa tayong monthsary na pag sasamahan kasi
+              ikaw lang ang super minamahall ng puso kong totoo, at maraming memories na
+              mabuo, maraming tawanan, at maraming moments na tayo lang ang nakakaintindi.
+              I LOOOOVEEE YOUUUU SOOOO MUUCHHH BABIII KOOOOO, babiii kooo. Mahal na mahal
+              kita, habangg buhayy. ️🤍.
+            </p>
+
+            <p class="letter-question">
+              I LOOOOVEEE YOUUUU AALLLWAAYSSS BABIII KOOOOO
+            </p>
+
+          </div>
+
+          <p class="letter-signature">
+            Forever yours,<br />
+            <span class="signature-name">Your One and onlyy ASAWAAA 💘</span>
+          </p>
+
+        </div>
+      </article>
+      
+      <div class="question-card hidden" id="questionCard">
+        <h2 class="question-title">WILL YOU BE MYYY FOREVERR WIFEYYYY?</h2>
+        <p class="question-sub">Choose from your heart 🤍</p>
+
+        <div class="question-buttons">
+          <button class="btn btn-yes" id="yesBtn">Yes 💖</button>
+          <button class="btn btn-no" id="noBtn">No 💔</button>
+        </div>
+
+        <p class="plea" id="pleaText"></p>
+      </div>
+
+    </section>
+    
+    <!-- Celebration -->
+    <section class="screen celebration-screen hidden" id="celebrationScreen">
+
+      <div class="celebration-card">
+        <div class="big-heart">🤍</div>
+
+        <h2 class="celebration-title">
+          You Just Made Me<br />
+          the Happiest Person Alive!
+        </h2>
+
+        <p class="celebration-text">
+          Ikaw lang ang asawaaa ko habang buhay, at wala nang iba. Salamat sa
+          pagmamahal, pag aalaga, pag unawa, at sa lahat ng memories natin.
+          Pangako, patuloy kitang mamahalin, aalagaan, susuportahan, at sasamahan
+          sa lahat ng pagsubok. Mahal na mahal kita, babiii kooo, ngayon at
+          habang buhay. .
+        </p>
+
+        <p class="celebration-sign">
+          — Yours, now and always 💍
+        </p>
+
+        <button class="btn btn-restart" id="restartBtn">
+          Read the letter again 💌
+        </button>
+
+      </div>
+
+      <div class="confetti-container" id="confettiContainer" aria-hidden="true"></div>
+
+    </section>
+
+  </main>
+  
+  <footer class="footer">
+    <p>Made with my 🤍 just for you</p>
+  </footer>
+  
+  <script src="script.js"></script>
+
+</body>
+
